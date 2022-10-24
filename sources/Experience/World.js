@@ -16,6 +16,7 @@ export default class World {
     this.resources.on("groupEnd", (_group) => {
       if (_group.name === "base") {
         this.createSea();
+        this.createBoat();
       }
     });
   }
@@ -31,6 +32,12 @@ export default class World {
       })
     );
     this.scene.add(this.sea);
+  }
+
+  createBoat(){
+    this.boat = 
+    console.log("boat? ", this.resources.items.boat)
+    this.scene.add(this.resources.items.boat.scene)
   }
 
   resize() {}
