@@ -23,7 +23,7 @@ export default class Light
         this.shadowLight = new THREE.DirectionalLight(0xffffff, .9);
 
         // Set the direction of the light  
-        this.shadowLight.position.set(150, 350, 350);
+        this.shadowLight.position.set(25, 25, 350);
         
         // Allow shadow casting 
         this.shadowLight.castShadow = true;

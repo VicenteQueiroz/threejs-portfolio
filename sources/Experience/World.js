@@ -35,9 +35,11 @@ export default class World {
   }
 
   createBoat(){
-    this.boat = 
-    console.log("boat? ", this.resources.items.boat)
-    this.scene.add(this.resources.items.boat.scene)
+    this.boat = this.resources.items.boat.scene;
+    this.boat.scale.multiplyScalar(1/15);
+    this.boat.rotation.x = -Math.PI / 2;
+    this.boat.position.z += 0.05;
+    this.scene.add(this.resources.items.boat.scene);
   }
 
   resize() {}
