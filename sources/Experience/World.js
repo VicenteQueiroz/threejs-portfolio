@@ -36,7 +36,7 @@ export default class World {
 
   createBoat(){
     this.boat = this.resources.items.boat.scene;
-    this.boat.scale.multiplyScalar(1/15);
+    this.boat.scale.multiplyScalar(1/12);
     this.boat.rotation.x = -Math.PI / 2;
     this.boat.position.z += 0.05;
     this.scene.add(this.resources.items.boat.scene);
